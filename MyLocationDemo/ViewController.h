@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "AlertManager.h"
+
+@class ViewControllerDelegates;
 
 @interface ViewController : UIViewController<CLLocationManagerDelegate>
 
@@ -15,7 +18,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *adressLabel;
-
+@property (strong, nonatomic) CLGeocoder* geoCoder;
+@property (strong, nonatomic) CLPlacemark *placeMark;
+@property (strong, nonatomic) ViewControllerDelegates *viewControllerDelegates;
 
 
 - (IBAction)getYourCurrentLocationButtonPressed:(id)sender;

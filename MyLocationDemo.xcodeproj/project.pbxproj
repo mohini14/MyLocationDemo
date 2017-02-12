@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		157286D81E4C493E001B2DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 157286D71E4C493E001B2DD5 /* main.m */; };
 		157286DB1E4C493E001B2DD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 157286DA1E4C493E001B2DD5 /* AppDelegate.m */; };
-		157286DE1E4C493E001B2DD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157286DD1E4C493E001B2DD5 /* ViewController.m */; };
 		157286E11E4C493E001B2DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157286DF1E4C493E001B2DD5 /* Main.storyboard */; };
 		157286E31E4C493E001B2DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157286E21E4C493E001B2DD5 /* Assets.xcassets */; };
 		157286E61E4C493F001B2DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157286E41E4C493F001B2DD5 /* LaunchScreen.storyboard */; };
 		157286EF1E4C4CBF001B2DD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */; };
+		C04D47408AE4AD4165241D80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D4413213A70BD3713C35E /* ViewController.m */; };
+		C04D4977260FD2D9E62A9B23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C04D447C7F04EFFD03C02711 /* Localizable.strings */; };
+		C04D4D46FCEFCD45BB164BB8 /* ViewControllerDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D4C4F7E23A2E0FC26EBB6 /* ViewControllerDelegates.m */; };
+		C04D4FDA5353DEFF8AD34CB1 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D4F97F3C0EE39B7DBF093 /* AlertManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,18 @@
 		157286D71E4C493E001B2DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		157286D91E4C493E001B2DD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		157286DA1E4C493E001B2DD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		157286DC1E4C493E001B2DD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		157286DD1E4C493E001B2DD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		157286E01E4C493E001B2DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		157286E21E4C493E001B2DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157286E51E4C493F001B2DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157286E71E4C493F001B2DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C04D4413213A70BD3713C35E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C04D447C7F04EFFD03C02711 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C04D48E1AC9C13FBB59CC0B9 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		C04D4A4583B5DCA4FF2EAD9B /* ViewControllerDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDelegates.h; sourceTree = "<group>"; };
+		C04D4BB9CF7D76DFCAE1EAC9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C04D4C4F7E23A2E0FC26EBB6 /* ViewControllerDelegates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDelegates.m; sourceTree = "<group>"; };
+		C04D4F97F3C0EE39B7DBF093 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,9 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15208F541E508A7C0071DF84 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C04D4810F5520F3F70F33AA2 /* ViewControllerUtils */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		157286CA1E4C493D001B2DD5 = {
 			isa = PBXGroup;
 			children = (
+				15208F541E508A7C0071DF84 /* Utility */,
 				157286D51E4C493E001B2DD5 /* MyLocationDemo */,
 				157286D41E4C493E001B2DD5 /* Products */,
 				157286ED1E4C4CBF001B2DD5 /* Frameworks */,
@@ -64,13 +81,15 @@
 			children = (
 				157286D91E4C493E001B2DD5 /* AppDelegate.h */,
 				157286DA1E4C493E001B2DD5 /* AppDelegate.m */,
-				157286DC1E4C493E001B2DD5 /* ViewController.h */,
-				157286DD1E4C493E001B2DD5 /* ViewController.m */,
 				157286DF1E4C493E001B2DD5 /* Main.storyboard */,
 				157286E21E4C493E001B2DD5 /* Assets.xcassets */,
 				157286E41E4C493F001B2DD5 /* LaunchScreen.storyboard */,
 				157286E71E4C493F001B2DD5 /* Info.plist */,
 				157286D61E4C493E001B2DD5 /* Supporting Files */,
+				C04D447C7F04EFFD03C02711 /* Localizable.strings */,
+				C04D4BDA79CAB90B676677D8 /* VC */,
+				C04D4BB9CF7D76DFCAE1EAC9 /* ViewController.h */,
+				C04D4413213A70BD3713C35E /* ViewController.m */,
 			);
 			path = MyLocationDemo;
 			sourceTree = "<group>";
@@ -89,6 +108,24 @@
 				157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C04D4810F5520F3F70F33AA2 /* ViewControllerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C04D4F97F3C0EE39B7DBF093 /* AlertManager.m */,
+				C04D48E1AC9C13FBB59CC0B9 /* AlertManager.h */,
+				C04D4C4F7E23A2E0FC26EBB6 /* ViewControllerDelegates.m */,
+				C04D4A4583B5DCA4FF2EAD9B /* ViewControllerDelegates.h */,
+			);
+			name = ViewControllerUtils;
+			sourceTree = "<group>";
+		};
+		C04D4BDA79CAB90B676677D8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +154,7 @@
 		157286CB1E4C493D001B2DD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mohini Sindhu ";
 				TargetAttributes = {
 					157286D21E4C493E001B2DD5 = {
@@ -152,6 +189,7 @@
 				157286E61E4C493F001B2DD5 /* LaunchScreen.storyboard in Resources */,
 				157286E31E4C493E001B2DD5 /* Assets.xcassets in Resources */,
 				157286E11E4C493E001B2DD5 /* Main.storyboard in Resources */,
+				C04D4977260FD2D9E62A9B23 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157286DE1E4C493E001B2DD5 /* ViewController.m in Sources */,
 				157286DB1E4C493E001B2DD5 /* AppDelegate.m in Sources */,
 				157286D81E4C493E001B2DD5 /* main.m in Sources */,
+				C04D4FDA5353DEFF8AD34CB1 /* AlertManager.m in Sources */,
+				C04D4D46FCEFCD45BB164BB8 /* ViewControllerDelegates.m in Sources */,
+				C04D47408AE4AD4165241D80 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +248,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -255,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -319,6 +361,7 @@
 				157286EC1E4C493F001B2DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
