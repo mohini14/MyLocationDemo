@@ -21,6 +21,7 @@
 @property (strong, nonatomic) CLGeocoder* geoCoder;
 @property (strong, nonatomic) CLPlacemark *placeMark;
 @property (strong, nonatomic) ViewControllerDelegates *viewControllerDelegates;
+@property(nonatomic, strong) CLLocationManager *locationManager;
 
 
 - (IBAction)getYourCurrentLocationButtonPressed:(id)sender;

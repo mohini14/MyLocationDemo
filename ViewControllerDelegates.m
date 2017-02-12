@@ -36,16 +36,20 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-	NSLog(@"didUpdateToLocation: %@", newLocation);
+	NSLog(NSLocalizedString(@"didUpdateToLocation: %@", nil), newLocation);
 	CLLocation *_currentLocation = newLocation;
 
 	if (_currentLocation != nil) {
 		self.viewController.longitudeLabel.text = [NSString stringWithFormat:@"%.8f", _currentLocation.coordinate.longitude];
 		self.viewController.latitudeLabel.text = [NSString stringWithFormat:@"%.8f", _currentLocation.coordinate.latitude];
 	}
-	NSLog(@"Resolving the adress");
+
+    // Stop Location Manager
+    [self.viewController.locationManager stopUpdatingLocation];
+
+	NSLog(NSLocalizedString(@"Resolving the address", nil));
 	[self.viewController.geoCoder reverseGeocodeLocation:_currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
-		NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
+		NSLog(NSLocalizedString(@"Found placemarks: %@, error: %@", nil), placemarks, error);
 		if (error == nil && [placemarks count] > 0) {
 			self.viewController.placeMark = [placemarks lastObject];
 			self.viewController.adressLabel.text = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@\n%@",

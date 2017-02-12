@@ -4,3 +4,6 @@
 
 "Failed to get location" = "Failed to get location";
 "ok" = "ok";
+"Found placemarks: %@, error: %@" = "Found placemarks: %@, error: %@";
+"didUpdateToLocation: %@" = "didUpdateToLocation: %@";
+"Resolving the address" = "Resolving the address";

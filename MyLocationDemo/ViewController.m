@@ -15,19 +15,17 @@
 @end
 
 @implementation ViewController
-{
-	CLLocationManager *_locationManager;
-}
+
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    _locationManager=[[CLLocationManager alloc]init];
+    self.locationManager =[[CLLocationManager alloc]init];
     _geoCoder=[[CLGeocoder alloc]init];
 
     self.viewControllerDelegates = [ViewControllerDelegates initWithVC:self];
-    _locationManager.delegate=self ;//in order to tell that this class is using protocol conform
+    self.locationManager.delegate=self ;//in order to tell that this class is using protocol conform
 
 
 }
@@ -40,9 +38,9 @@
 
 
 -(IBAction)getYourCurrentLocationButtonPressed:(id)sender{
-	_locationManager.desiredAccuracy=kCLLocationAccuracyBest;
-	[_locationManager startUpdatingLocation];
-	[_locationManager requestWhenInUseAuthorization]; // Add This Line
+	self.locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+	[self.locationManager startUpdatingLocation];
+	[self.locationManager requestWhenInUseAuthorization]; // Add This Line
 
 }
 
