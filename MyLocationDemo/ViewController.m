@@ -21,11 +21,7 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    self.locationManager =[[CLLocationManager alloc]init];
-    _geoCoder=[[CLGeocoder alloc]init];
-
-    self.viewControllerDelegates = [ViewControllerDelegates initWithVC:self];
-    self.locationManager.delegate=self ;//in order to tell that this class is using protocol conform
+   //in order to tell that this class is using protocol conform
 
 
 }
@@ -38,9 +34,24 @@
 
 
 -(IBAction)getYourCurrentLocationButtonPressed:(id)sender{
-	self.locationManager.desiredAccuracy=kCLLocationAccuracyBest;
-	[self.locationManager startUpdatingLocation];
-	[self.locationManager requestWhenInUseAuthorization]; // Add This Line
+	
+	LocationManager *locationManager = [LocationManager sharedManager];
+	[locationManager getUserLocationwithCompletionHandler:^(CLLocation *location, BOOL isSuccessful,CLPlacemark *address) {
+		if (location != nil) {
+					_longitudeLabel.text = [NSString stringWithFormat:@"%.8f", location.coordinate.longitude];
+					_latitudeLabel.text = [NSString stringWithFormat:@"%.8f", location.coordinate.latitude];
+				}
+		
+		if (isSuccessful &&  address ){
+						_adressLabel.text = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@\n%@",
+																address.subThoroughfare,address.thoroughfare,
+																address.postalCode, address.locality,
+																address.administrativeArea,
+																address.country];
+		
+		}
+		
+		}];
 
 }
 

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 #import "AlertManager.h"
+#import "LocationManager.h"
 
 @class ViewControllerDelegates;
 
