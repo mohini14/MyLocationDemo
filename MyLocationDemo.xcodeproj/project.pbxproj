@@ -14,6 +14,8 @@
 		157286E31E4C493E001B2DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157286E21E4C493E001B2DD5 /* Assets.xcassets */; };
 		157286E61E4C493F001B2DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157286E41E4C493F001B2DD5 /* LaunchScreen.storyboard */; };
 		157286EF1E4C4CBF001B2DD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */; };
+		C04D42018C6927B352079007 /* LocationManagerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D4B40C60D43CFA6740524 /* LocationManagerUtils.m */; };
+		C04D42A34A284D6CDCE038F3 /* AlertManagerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D45FAD4514DDF77046584 /* AlertManagerUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		157286E51E4C493F001B2DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157286E71E4C493F001B2DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C04D42FEBE2997468462493C /* LocationManagerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManagerUtils.h; sourceTree = "<group>"; };
+		C04D45FAD4514DDF77046584 /* AlertManagerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManagerUtils.m; sourceTree = "<group>"; };
+		C04D49E0EFEE1D0A69765972 /* AlertManagerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManagerUtils.h; sourceTree = "<group>"; };
+		C04D4B40C60D43CFA6740524 /* LocationManagerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 				157286D51E4C493E001B2DD5 /* MyLocationDemo */,
 				157286D41E4C493E001B2DD5 /* Products */,
 				157286ED1E4C4CBF001B2DD5 /* Frameworks */,
+				C04D406E2E509D8FDB086973 /* Utilities */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +96,33 @@
 				157286EE1E4C4CBF001B2DD5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C04D406E2E509D8FDB086973 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C04D42C2882708BD0E9FD27C /* UIUtilities */,
+				C04D477BCBD86CF1AC36AE86 /* BackgroundTaskUtilities */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C04D42C2882708BD0E9FD27C /* UIUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C04D45FAD4514DDF77046584 /* AlertManagerUtils.m */,
+				C04D49E0EFEE1D0A69765972 /* AlertManagerUtils.h */,
+			);
+			path = UIUtilities;
+			sourceTree = "<group>";
+		};
+		C04D477BCBD86CF1AC36AE86 /* BackgroundTaskUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C04D4B40C60D43CFA6740524 /* LocationManagerUtils.m */,
+				C04D42FEBE2997468462493C /* LocationManagerUtils.h */,
+			);
+			path = BackgroundTaskUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +199,8 @@
 				157286DE1E4C493E001B2DD5 /* ViewController.m in Sources */,
 				157286DB1E4C493E001B2DD5 /* AppDelegate.m in Sources */,
 				157286D81E4C493E001B2DD5 /* main.m in Sources */,
+				C04D42A34A284D6CDCE038F3 /* AlertManagerUtils.m in Sources */,
+				C04D42018C6927B352079007 /* LocationManagerUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
